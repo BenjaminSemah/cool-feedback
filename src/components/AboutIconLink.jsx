@@ -2,7 +2,6 @@ import { FaQuestion } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const AboutIconLink = () => {
-  console.log(FaQuestion)
   return (
     <div className='about-link'>
       <Link to='/about'>
