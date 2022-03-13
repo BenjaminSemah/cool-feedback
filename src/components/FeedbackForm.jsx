@@ -9,24 +9,24 @@ const FeedbackForm = ({ handleAdd }) => {
   const [btnDisabled, setBtnDisabled] = useState(true)
   const [validateMsg, setValidateMsg] = useState('')
 
-  const handleTextChange = (e) => {
-    if (text === '') {
+  const handleTextChange = ({ target: { value } }) => {
+    if (value === '') {
       setBtnDisabled(true)
       setValidateMsg(null)
-    } else if (text !== '' && text.trim().length <= 7) {
-      setBtnDisabled(true)
+    } else if (value.trim().length < 10) {
       setValidateMsg('Text must be at least 10 characters')
+      setBtnDisabled(true)
     } else {
-      setBtnDisabled(false)
       setValidateMsg(null)
+      setBtnDisabled(false)
     }
 
-    setText(e.target.value)
+    setText(value)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (text.trim().length > 5) {
+    if (text.trim().length > 10) {
       const newFeedback = {
         text,
         rating,
