@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/SpaceTraveler-violet)
+![](https://img.shields.io/badge/CoolFeedbackApp-violet)
 
 # Cool Feedback App
 
@@ -7,10 +7,10 @@
 > (rating and review). Users can also easily edit feedback.
 
 ## App Screenshot
-![App Screenshot](https://github.com/BenjaminSemah/cool-feedback/blob/dev/appScreenshot.png)
+![App Screenshot](https://github.com/BenjaminSemah/cool-feedback/blob/main/appScreenshot.png)
 
 ## Live Demo
-[Link to Live version]()
+[Link to Live version](https://coolfeedback.netlify.app/)
 
 ## Built with
 - React JS
@@ -24,8 +24,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### To get a local copy, run the following steps:
 
-- Clone the repository with `git@github.com:BenjaminSemah/books-and-libraries.git`
-- Navigate to the folder `cd books-and-libraries`
+- Clone the repository with `git@github.com:BenjaminSemah/cool-feedback.git`
+- Navigate to the folder `cd cool-feedback`
 - Open the project with your code editor
 - Run `npm install` to install all dependencies
 - Run `npm start` and go to `http://localhost:3000//` to launch the server.
@@ -42,7 +42,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BenjaminSemah/books-and-libraries/issues).
+Feel free to check the [issues page](https://github.com/BenjaminSemah/cool-feedback/issues).
 
 ## Show your support
 
