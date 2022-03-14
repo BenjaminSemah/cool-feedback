@@ -24,8 +24,8 @@ const FeedbackForm = () => {
     if (value === '') {
       setBtnDisabled(true)
       setValidateMsg(null)
-    } else if (value.trim().length < 10) {
-      setValidateMsg('Text must be at least 10 characters')
+    } else if (value.trim().length < 5) {
+      setValidateMsg('Text must be at least 5 characters')
       setBtnDisabled(true)
     } else {
       setValidateMsg(null)
@@ -37,7 +37,7 @@ const FeedbackForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (text.trim().length > 10) {
+    if (text.trim().length > 5) {
       const newFeedback = {
         text,
         rating,
@@ -56,7 +56,7 @@ const FeedbackForm = () => {
   return (
     <Card>
       <form onSubmit={handleSubmit}>
-        <h2>Hey There! (add smiling emo). Thanks for passing by. How would you rate this project?</h2>
+        <h2>How would you rate this project?</h2>
         <RatingSelect select={(rating) => setRating(rating)} />
         <div className="input-group">
           <input 
